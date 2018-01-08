@@ -5,6 +5,7 @@ $(function () {
         let colorPicked;
         colorPicked = $("#colorPicker").val();
         $("#colorPicker").attr("value",colorPicked);
+        return colorPicked;
     });
 
     // Select size input
@@ -35,6 +36,15 @@ $(function () {
      };
 
      // Draw the pixel art, by clicking on the desire square.
+
+    $('table').on('click','td',function() {
+        let colorPicked = $('#colorPicker').val();
+        return $(this).css('background-color',colorPicked);
+
+    });
+
+
+
 
 
 
