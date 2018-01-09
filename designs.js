@@ -5,7 +5,6 @@ $(function () {
         let colorPicked;
         colorPicked = $("#colorPicker").val();
         $("#colorPicker").attr("value",colorPicked);
-        return colorPicked;
     });
 
     // Select size input
@@ -18,9 +17,8 @@ $(function () {
         $('#input_height').attr('value',N);
         M = $('#input_width').val();
         $('#input_width').attr('value',M);
-        console.log('You clicked!');
         $(this).remove();
-        $('form').append('<input type="submit" value="Submit">')
+        $('form').append('<input type="submit" value="Submit">');
         makeGrid(N,M);
     });
 
@@ -37,18 +35,11 @@ $(function () {
 
      // Draw the pixel art, by clicking on the desire square.
 
-    $('table').on('click','td',function() {
-        let colorPicked = $('#colorPicker').val();
-        return $(this).css('background-color',colorPicked);
-
+    $('table').click(function(evt) {
+        $(evt.target).toggleClass('color_changed');
+        let colorPicked = $(evt.target).hasClass('color_changed') ? $("#colorPicker").val() : 'white';
+        $(evt.target).css('background-color',colorPicked);
     });
-
-
-
-
-
-
-
 
 
 });
