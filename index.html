@@ -9,14 +9,24 @@
         <meta charset="UTF-8">
     </head>
     <body>
+        <img src="http://pixelartmaker.com/art/e2dc0419ba5a091.png" alt="Pixeled Imagen">
         <h1>Lab: Pixel Art Maker</h1>
         <h2>Choose Grid Size</h2>
         <form id="sizePicker">
-            <label for="input_height">Grid Height:</label>
-            <input type="number" id="input_height" name="height" min="1" value="1">
-            <label for="input_width">Grid Width:</label>
-            <input type="number" id="input_width" name="width" min="1" value="1">
-            <input type="submit" value="Submit">
+            <div class="size">
+                <div class="size_input">
+                    <label for="input_height">Grid Height:</label>
+                    <input type="number" id="input_height" name="height" min="1" value="1">
+                </div>
+                <div class="size_input">
+                    <label for="input_width">Grid Width:</label>
+                    <input type="number" id="input_width" name="width" min="1" value="1">
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Create Grid" id="create_grid">
+                <input type="submit" value="Clear Grid" id="clear_grid">
+            </div>
         </form>
 
         <h2>Pick A Color</h2>

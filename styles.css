@@ -1,20 +1,29 @@
 body {
     text-align: center;
+    background: linear-gradient(to right, #39A2AE, #75E4B3);
 }
-
 h1 {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
+    color: red;
+}
+
+img {
+    width: 150px;
+
+
 }
 
 h2 {
     margin: 1em 0 0.25em;
+    color: white;
 }
 
 h2:first-of-type {
     margin-top: 0.5em;
 }
+
 
 table,
 tr,
@@ -25,6 +34,8 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    background-color: white;
+    border: 5px solid #75E4B3;
 }
 
 tr {
@@ -35,10 +46,53 @@ td {
     width: 20px;
 }
 
+td:hover {
+    background-color: #D3D3D3;
+}
+
+.size {
+    display: inline-block;
+}
+
+.size_input {
+    margin: 10px;
+    color: white;
+}
+
 input[type=number] {
     width: 6em;
+    border-radius: 5px;
 }
+
+.buttons {
+    display: inline-block;
+    position: relative;
+    left: 50px;
+}
+
 input[type=submit] {
+    display: block;
+    width: 100px;
+    height: 30px;
     background-color: white;
     border-radius: 6px;
+    color: #00BFB3;
+    font-weight: 900;
+}
+
+input[type=submit]:hover {
+    background-color: #00BFB3;
+    color: white;
+}
+
+
+#clear_grid {
+    position: relative;
+    top: 10px;
+}
+
+#colorPicker {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
 }
