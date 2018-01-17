@@ -1,9 +1,12 @@
 body {
     text-align: center;
     background: linear-gradient(to right, #39A2AE, #75E4B3);
+    font-family: Patrick Hand;
 }
+
 h1 {
     font-family: Monoton;
+    font-weight: normal;
     font-size: 70px;
     margin: 0.2em;
     color: red;
@@ -11,11 +14,10 @@ h1 {
 
 img {
     width: 150px;
-
-
 }
 
 h2 {
+    font-size: 35px;
     margin: 1em 0 0.25em;
     color: white;
 }
@@ -24,18 +26,16 @@ h2:first-of-type {
     margin-top: 0.5em;
 }
 
-
-table,
-tr,
-td {
-    border: 1px solid black;
-}
-
 table {
     border-collapse: collapse;
     margin: 0 auto;
     background-color: white;
     border: 5px solid #75E4B3;
+}
+
+tr,
+td {
+    border: 1px solid black;
 }
 
 tr {
@@ -50,34 +50,48 @@ td:hover {
     background-color: #D3D3D3;
 }
 
-.size {
+#size {
     display: inline-block;
+
 }
 
 .size_input {
     margin: 10px;
+    font-size: 25px;
+    font-weight: 900;
     color: white;
 }
 
-input[type=number] {
-    width: 6em;
-    border-radius: 5px;
+#size_width {
+    position: relative;
+    right: -4px;
 }
 
-.buttons {
+input[type=number] {
+    width: 7em;
+    height: 2em;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #75E4B3;
+    color: white;
+}
+
+#buttons {
     display: inline-block;
     position: relative;
-    left: 50px;
+    left: 30px;
+    top: -10px;
 }
 
 input[type=submit] {
     display: block;
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     color: #00BFB3;
     font-weight: 900;
+    font-size: 15px;
 }
 
 input[type=submit]:hover {

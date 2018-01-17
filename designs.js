@@ -11,7 +11,6 @@ $(function () {
 
     let color = "#000";
 
-
     // Select color input
 
     colorPicker.change(function() {
