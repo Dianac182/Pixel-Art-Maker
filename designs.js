@@ -28,16 +28,26 @@ $(function () {
         for(let i=1; i<=N; i++) {
             $('#pixel_canvas tr').remove();
         }
-        makeGrid(N,M);
+
+
+        if((parseInt(N) < 1) || (parseInt(M) < 1)) {
+            alert("You entered a value less than 1! Please try a new one.");
+        } else if((parseInt(N) > 100) || (parseInt(M) > 100)) {
+            alert("You entered a value greater than 100! Please try a new one.");
+        } else if((N != parseInt(N, 10)) || (M != parseInt(M, 10))) {
+            alert("Your input is not a integer! Please try again.");
+        } else {
+            makeGrid(N,M);
+        }
         evt.preventDefault();
     });
 
     // When size is submitted by the user, call makeGrid()
 
     function makeGrid(N,M) {
-        for(let i=1; i<=N; i=i+1) {
+        for(let i=1; i<=N; i++) {
             tableCanvas.append('<tr></tr>');
-            for(let j=1; j<=M; j=j+1) {
+            for(let j=1; j<=M; j++) {
                 $('table tr:last-child').append('<td></td>');
             }
         }
@@ -50,13 +60,6 @@ $(function () {
         let colorBg = $(evt.target).hasClass('color_changed') ? color : 'white';
         $(evt.target).css('background-color',colorBg);
     });
-
-    /*function fillin2(evt) {
-        let color = $('#colorPicker').val();
-        $(evt.target).attr('style', 'background-color: color');
-    }
-    let pixel = $('#pixel_canvas').find('td');
-    pixel.on('click',fillin2);*/
 
     // Clear grid pressing button
 
