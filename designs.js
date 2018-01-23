@@ -2,12 +2,13 @@ $(function () {
 
     //Define variables
 
-    const colorPicker = $('#colorPicker');
-    const tableCanvas = $('#pixel_canvas');
+    let colorPicker = $('#colorPicker');
+    let tableCanvas = $('#pixel_canvas');
     const createButton = $('#create_grid');
     const clearButton = $('#clear_grid');
-    const gridHeight = $('#input_height');
-    const gridWidth = $('#input_width');
+    let gridHeight = $('#input_height');
+    let gridWidth = $('#input_width');
+    const gridPalette = $('#palette');
 
     let color = "#000";
 
@@ -35,11 +36,12 @@ $(function () {
         } else if((parseInt(N) > 100) || (parseInt(M) > 100)) {
             alert("You entered a value greater than 100! Please try a new one.");
         } else if((N != parseInt(N, 10)) || (M != parseInt(M, 10))) {
-            alert("Your input is not a integer! Please try again.");
+            alert("Your input is not an integer! Please try again.");
         } else {
             makeGrid(N,M);
         }
         evt.preventDefault();
+        console.log($('#pixel_canvas tr:last-child'));
     });
 
     // When size is submitted by the user, call makeGrid()
@@ -48,7 +50,7 @@ $(function () {
         for(let i=1; i<=N; i++) {
             tableCanvas.append('<tr></tr>');
             for(let j=1; j<=M; j++) {
-                $('table tr:last-child').append('<td></td>');
+                $('#pixel_canvas tr:last-child').append('<td></td>');
             }
         }
     }
