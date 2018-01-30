@@ -1,41 +1,106 @@
 body {
     text-align: center;
-    background: linear-gradient(to right, #39A2AE, #75E4B3);
-    font-family: Patrick Hand;
+    background: linear-gradient(to right, #39a2ae, #75e4b3);
+    font-family: "Patrick Hand", "Gloria Hallelujah", sans-serif;
 }
 
 h1 {
-    font-family: Monoton;
-    font-weight: normal;
-    font-size: 70px;
+    font: normal 70px "Monoton", serif;
     margin: 0.2em;
-    color: red;
+    color: #f00;
 }
 
 img {
     width: 150px;
 }
 
+/*Section: Choose Grid Size*/
 h2 {
     font-size: 35px;
     margin: 1em 0 0.25em;
-    color: white;
+    color: #fff;
 }
 
 h2:first-of-type {
     margin-top: 0.5em;
 }
 
+.size {
+    display: inline-block;
+    margin: 5px;
+}
+
+.size-height,
+.size-width {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.size-width {
+    position: relative;
+    right: -4px;
+}
+
+input[type=number] {
+    width: 5em;
+    height: 1.5em;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #75e4b3;
+    color: #fff;
+}
+
+.buttons {
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    top: -8px;
+}
+
+input[type=submit] {
+    display: block;
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #00bfb3;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: #00bfb3;
+    color: #fff;
+}
+
+input[value="Clear Grid"] {
+    position: relative;
+    top: 10px;
+}
+
+
+/*Section: Pick a Color */
+input[type=color] {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/*Section: Design Canvas */
 table {
     border-collapse: collapse;
     margin: 0 auto;
-    background-color: white;
-    border: 5px solid #75E4B3;
+    background-color: #fff;
+    border: 5px solid #75e4b3;
 }
 
 tr,
 td {
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 tr {
@@ -47,66 +112,5 @@ td {
 }
 
 td:hover {
-    background-color: #D3D3D3;
-}
-
-#size {
-    display: inline-block;
-
-}
-
-.size_input {
-    margin: 10px;
-    font-size: 25px;
-    font-weight: 900;
-    color: white;
-}
-
-#size_width {
-    position: relative;
-    right: -4px;
-}
-
-input[type=number] {
-    width: 7em;
-    height: 2em;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: #75E4B3;
-    color: white;
-}
-
-#buttons {
-    display: inline-block;
-    position: relative;
-    left: 30px;
-    top: -10px;
-}
-
-input[type=submit] {
-    display: block;
-    width: 120px;
-    height: 40px;
-    background-color: white;
-    border-radius: 8px;
-    color: #00BFB3;
-    font-weight: 900;
-    font-size: 15px;
-}
-
-input[type=submit]:hover {
-    background-color: #00BFB3;
-    color: white;
-}
-
-
-#clear_grid {
-    position: relative;
-    top: 10px;
-}
-
-#colorPicker {
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
+    background-color: #d3d3d3;
 }
