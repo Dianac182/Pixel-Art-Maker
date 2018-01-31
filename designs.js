@@ -9,7 +9,6 @@ $(function () {
     let gridHeight = $('#input-height');
     let gridWidth = $('#input-width');
 
-
     let color = '#000';            // Default color of the grid.
 
     // Select color input and save the color picked
@@ -39,13 +38,13 @@ $(function () {
         } else {
             makeGrid(N,M);
         }
-
         evt.preventDefault();
     });
 
     //Declaration of makeGrid() function
 
-    function makeGrid(N,M) {for(let i=1; i<=N; i++) {
+    function makeGrid(N,M) {
+        for(let i=1; i<=N; i++) {
             tableCanvas.append('<tr></tr>');
             for(let j=1; j<=M; j++) {
                 $('table tr:last-child').append('<td></td>');
