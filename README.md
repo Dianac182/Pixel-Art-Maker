@@ -1,16 +1,20 @@
-# Pixel Art Maker Project
+# Pixel Art Maker
 
-## Table of Contents
+Single-page web app that allows users to draw pixel art on a customizable canvas. The starter code in HTML and CSS was given. The goal was to write the JavaScript code to let the users to create a grid of squares representing their design applying colors to those squares to create a digital masterpiece.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+This was the final project from the **Google Developer Challenge Scholarship: Front-End Web Dev** from Udacity.
 
-## Instructions
+## Prerequisites
 
-To get started, open `designs.js` and start building out the app's functionality.
+The skills needed for this project were given by the courses from Udacity:
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+- [Intro to JavaScript](https://eu.udacity.com/course/intro-to-javascript--ud803).
+- [Intro to jQuery](https://eu.udacity.com/course/intro-to-jquery--ud245).
 
-## Contributing
+## Contribution
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+If you want to contribute to this project, just make sure to follow the [Udacity Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html) for writing HTML, CSS, JavaScript code, as well as commit messages when using GIT.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/Dianac182/pixel-art-maker/blob/master/LICENSE.txt) file for details
